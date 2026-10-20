@@ -1,9 +1,9 @@
 module github.com/yext/terraform-provider-site
 
-go 1.20
+go 1.22.0
 
 require (
-	github.com/gobwas/glob v0.2.3
+	github.com/gobwas/glob v1.0.0
 	github.com/hashicorp/terraform v0.14.11
 	gopkg.in/yaml.v2 v2.4.0
 )

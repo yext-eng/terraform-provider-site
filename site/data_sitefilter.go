@@ -63,7 +63,7 @@ func validateSiteConfigs(val interface{}, key string) ([]string, []error) {
 	var errs []error
 	for id, siteYAML := range val.(map[string]any) {
 		if _, err := NewSiteMetadata(siteYAML.(string)); err != nil {
-			errs = append(errs, fmt.Errorf("invalid %q[%d]: %w", key, id, err))
+			errs = append(errs, fmt.Errorf("invalid %q[%q]: %w", key, id, err))
 		}
 	}
 	return nil, errs
@@ -108,7 +108,7 @@ func unmarshalSiteMetadata(rawSiteConfigs map[string]any) (map[string]SiteMetada
 	for id, siteYAML := range rawSiteConfigs {
 		meta, err := NewSiteMetadata(siteYAML.(string))
 		if err != nil {
-			return nil, fmt.Errorf("invalid site_yamls[%d]: %w", id, err)
+			return nil, fmt.Errorf("invalid site_yamls[%q]: %w", id, err)
 		}
 		metas[id] = meta
 	}
