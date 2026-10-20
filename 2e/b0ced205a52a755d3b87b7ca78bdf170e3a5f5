@@ -1,0 +1,22 @@
+README.md
+  h_bdbe71e811f378 6
+go.mod
+  h_bdbe71e811f378 3,6
+go.sum
+  h_bdbe71e811f378 143-144
+site/data_sitefilter.go
+  h_bdbe71e811f378 66,111
+site/data_sitefilter_test.go
+  h_bdbe71e811f378 1-61
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "2eb0ced205a52a755d3b87b7ca78bdf170e3a5f5",
+  "prompts": {},
+  "humans": {
+    "h_bdbe71e811f378": {
+      "author": "Yi Zhang <yzhang@yext.com>"
+    }
+  }
+}
